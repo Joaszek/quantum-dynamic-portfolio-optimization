@@ -43,11 +43,11 @@ project/
 │
 ├── data/
 │   ├── data_apple_cocacola_google.csv    # Raw prices
-│   ├── covariance.csv                    # Covariance matrix for each window
 │   └── results/
 │       └── sliding_window_results.csv    # Optimizer output
-│
-├── data_loader.py                        # Loads CSV price data
-├── return_calculator.py                  # Computes log returns
-├── window_optimizer.py                   # Main QAOA optimization loop
-└── visualizer.py                         # Plots selection heatmap, scores & real returns
+├── src/
+    ├── data_loader.py                        # Loads CSV price data
+    ├── return_calculator.py                  # Computes log returns
+    ├── window_optimizer.py                   # Main QAOA optimization loop
+    ├── show_data.py  
+└── main.py                         # main file
