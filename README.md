@@ -10,18 +10,19 @@ It simulates dynamic investment decisions based on a quantum-inspired optimizati
 
 We solve a quadratic binary optimization problem of the form:
 
-> maximize  
-> $$ \mu^T x - \lambda x^T \Sigma x $$
->
-> subject to:  
-> $$ \sum x_i = k, \quad x_i \in \{0,1\} $$ 
+**maximize**  
+μᵀx − λ · xᵀΣx
+
+**subject to**  
+∑xᵢ = k, xᵢ ∈ {0,1}
 
 Where:
-- \( x_i \): whether asset *i* is selected
-- \( \mu \): expected return vector
-- \( \Sigma \): covariance matrix
-- \( \lambda \): risk aversion parameter
-- \( k \): number of assets to select
+- (xᵢ): whether asset *i* is selected  
+- (μ): expected return vector  
+- (Σ): covariance matrix  
+- (λ): risk aversion parameter  
+- (k): number of assets to select
+
 
 The problem is solved using:
 - `Qiskit Optimization` (`QuadraticProgram`)
